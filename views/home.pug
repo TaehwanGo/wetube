@@ -1,4 +1,15 @@
 extends layouts/main
+//- include mixins/videoBlock
 
 block content
-    p Hello~
+    .videos
+        each item in videos
+            h1= item.title
+            p= item.description
+        //- +videoBlock({
+        //-     title:item.title,
+        //-     views:item.views,
+        //-     videoFile:item.videoFile
+        //- })
+
+//- +기호는 include를 의미함 

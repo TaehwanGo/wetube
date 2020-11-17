@@ -1,0 +1,39 @@
+// 수정요
+https://codesandbox.io/s/day-17-18-19-blueprint-9pobi?file=/src/index.js
+
+Mongoose Time!
+오늘의 강의: 유튜브 클론코딩 2.0 - 3.12
+오늘의 과제: 위의 강의를 시청하신 후, 아래 코딩 챌린지를 완료하세요.
+제출기간: 3일 챌린지 입니다! 토요일 오전 6시까지
+Attention
+To run this Sandbox, you will have to add your username in the line 10 of models/Movie.js
+We are all sharing a database, adding your username is required so we can all work on the same DB at the same time.
+To find your username, go to nomadcoders.co and look for your username, i.e @serranoarevalo
+With the provided blueprint, make an app that has this exact output:
+
+https://www.youtube.com/watch?v=eeFLsUzNy7g&feature=emb_title
+
+
+The routes you have to make are:
+/ <-- See all movies
+/create <-- Create a movie (html form)
+/:id <-- See movie by ID
+/:id/edit <-- Edit movie by ID
+/:id/delete <-- Delete movie by ID
+/search <-- Search movies
+
+
+
+조건
+Using Mongoose, create a CRUD (Create, Read, Delete, Update) Application for Movies.
+Make all the six routes with their controllers.
+On the line 12 of models/Movie.js you have to create a complete schema for your movie model. The schema should have the fields id, title, year, rating, synopsis, genres[], uploadedAt
+All the fields are required.
+You need to validate that the year is a number.
+You need to validate that the title is at least 3 characters long.
+When I create a movie I should be redirected to the detail page of that movie.
+When a movie is not found I should see a 404.
+When I delete a movie I should be redirected to the home page.
+On the /search page I should be able to filter by greater than or equal ( $gte ) /search?year=1900 or /search?rating=9.6
+The app must behave exactly like the video
+IF ANY OF THE REQUIREMENTS ARE NOT FULFILLED YOU WILL GET AN ❌

@@ -1,7 +1,11 @@
+//- class 이름 : html tag.클래스이름 ~ header.header
 header.header
     .header__column
         a(href=routes.home)
             i.fab.fa-youtube
+    .header__column
+        form(action=routes.search, method="get")
+            input(type="text", placeholder="Search by term...", name="term")
     .header__column
         ul
             li

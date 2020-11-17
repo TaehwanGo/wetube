@@ -12,9 +12,9 @@ const userRouter = express.Router(); // router는 많은 route들이 담긴 파�
 // userRouter.get("/", (req, res) => res.send('user index'));
 // userRouter.get("/edit", (req, res) => res.send('user edit'));
 // userRouter.get("/password", (req, res) => res.send('user password'));
-userRouter.get(routes.userDetail, userDetail);
-userRouter.get(routes.editProfile, editProfile);
+userRouter.get(routes.editProfile, editProfile); // 이게 먼저와야됨 userDetail보다 
 userRouter.get(routes.changePassword, changePassword);
+userRouter.get(routes.userDetail, userDetail);
 
 export default userRouter;
 

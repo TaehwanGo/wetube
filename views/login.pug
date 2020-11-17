@@ -1,4 +1,10 @@
 extends layouts/main
 
 block content
-    p Login 
+    .form-container
+        form(action=routes.login, method="post")
+            // 여기 routes를 이용할 수 있는게 app에서 import해서 가능한건가?
+            input(type="email", name="email", placeholder="Email")
+            input(type="password", name="password", placeholder="Password")
+            input(type="submit", value="Log In")
+        include partials/socialLogin

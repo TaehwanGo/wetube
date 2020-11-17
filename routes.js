@@ -12,8 +12,8 @@ const SEARCH = "/search";
 // User
 const USERS = "/users";
 const USER_DETAIL = "/:id"; // user/1 (1 : id)
-const EDIT_PROFILE = "/:id/edit-profile"; // 임시로 바꿨는데 나중에 변경할 수 도 있음 
-const CHANGE_PASSWORD = "/:id/change-password";
+const EDIT_PROFILE = "/edit-profile"; // 임시로 바꿨는데 나중에 변경할 수 도 있음 
+const CHANGE_PASSWORD = "/change-password";
 
 // Videos
 const VIDEOS = "/videos";

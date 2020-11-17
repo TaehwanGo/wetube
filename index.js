@@ -1,12 +1,12 @@
 // console.log("Hi!");
 
-// const express = require('express'); // 이걸 최신 자바스크립트 파일로 변경하면 
+// // const express = require('express'); // 이걸 최신 자바스크립트 파일로 변경하면 
 import express from "express";
 import morgan from "morgan"; // 하얀글씨 morgan은 변수이름임 
 import helmet from "helmet";
 import cookeParser from "cookie-parser";
 import bodyParser from "body-parser";
-const app = express();
+// const app = express();
 // const handleListening = () => {
 
 // }
@@ -19,7 +19,7 @@ const handleListening = () => console.log(`Listening on : http://localhost:${POR
 
 const handleHome = (req, res) => res.send("Hello from Home");
 
-const handleProfile = (req, res) => res.send("You are on my profile");
+const handleProfile = (req, res) => res.send("You are on my profile"); // 나중에 res.send 대신 풀 html과 css를 보내줘야 됨 
 
 const betweenHome = (req, res, next) => {
     console.log("I'm between");

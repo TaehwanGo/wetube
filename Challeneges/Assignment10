@@ -1,0 +1,66 @@
+QUESTION 1 OF 16
+On a controller how can I get the ID on a route like: "/user/:id"
+Using req.params.id
+QUESTION 2 OF 16
+CORRECT
+On a controller how can I get the ID on a route like: "/user?id=123"
+Using req.query.id
+QUESTION 3 OF 16
+CORRECT
+What's the difference between a method="post" and method="get" on an form
+method="get" sends the data of the form on the url and method="post" sends it hidden from the user
+QUESTION 4 OF 16
+CORRECT
+What are mixins for
+Mixins are useful when I want to reuse some HTML block that has same structure but different data
+QUESTION 5 OF 16
+CORRECT
+MongoDB is a SQL Database
+False
+QUESTION 6 OF 16
+CORRECT
+Mongo is the same as Mongoose
+False
+QUESTION 7 OF 16
+CORRECT
+What is the difference between Mongo and Mongoose
+Mongo is a database, Mongoose is how we talk to the database using JS
+QUESTION 8 OF 16
+INCORRECT
+What is the point of using dotenv
+To encrypt our code
+YOUR ANSWER
+To be able to hide strings from the version control systems
+CORRECT ANSWER
+QUESTION 9 OF 16
+CORRECT
+What is a Schema
+Is an object that tells Mongoose the shape of the data that we will save
+QUESTION 10 OF 16
+CORRECT
+It's a good practice so save files on a database
+False
+QUESTION 11 OF 16
+CORRECT
+If I want to save a file what should I do
+Save a link to the location of the file on the database
+QUESTION 12 OF 16
+CORRECT
+What does Mongo store?
+JSON Documents
+QUESTION 13 OF 16
+CORRECT
+What is the "ObjectId" type for?
+To tell Mongoose that here we are gonna save an ID of a different Model
+QUESTION 14 OF 16
+CORRECT
+What is the difference between Date.now and Date.now() when adding a "createdAt" to a model
+Date.now() executes the function immediately, Date.now waits for the function to be called.
+QUESTION 15 OF 16
+CORRECT
+What does "mongoose.model("Movie", MovieSchema)" do
+It tells Mongoose that the "Movie" model will have the shape of the MovieSchema
+QUESTION 16 OF 16
+CORRECT
+On the video #3 .4 why did we import the models in the init.js file
+Because we need to make the mongoose connection 'aware' of the Models that we will save in the future.
